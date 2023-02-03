@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   INDEX
+{% endblock %}
+
+{% block main %}
+<h2>Task List</h2>
+  <div class="mx-5">
+    <table class="table">
+        <thead class="th">
+          <tr>
+            <th scope="col">Task</th>
+            <th scope="col">Deadline</th>
+            <th scope="col">Completed</th>
+          </tr>
+        </thead>
+        <tbody >
+            {% for row in tasks %}
+            <tr class="tr">
+              <td>{{row["task"]}}</td>
+              <td>{{row["deadline"]}}</td>
+              <td><input type="checkbox" name="check"></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+    </div>
+{% endblock %}

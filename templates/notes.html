@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   BUY
+{% endblock %}
+
+{% block main %}
+    <h2>Your Notes Go Here!</h2>
+    <div class="mx-5">
+        <table class="table">
+            <thead class="th">
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Note</th>
+                <th scope="col">Date Added</th>
+            </tr>
+            </thead>
+            <tbody>
+                {% for row in notes %}
+                <tr class="tr">
+                <td>{{row["title"]}}</td>
+                <td>{{row["note"]}}</td>
+                <td>{{row["date_added"]}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
