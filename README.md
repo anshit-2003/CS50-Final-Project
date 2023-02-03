@@ -27,10 +27,6 @@ The users table stored the user_id ,username , master password for every user an
 
 To ensure proper security measures the master password is stored in an encrypted manner using the encryption provided by werkzeug.security
 
-
-### Notes :
- Thi
-
 #### Technologies Used :
  * Python
  * Flask
