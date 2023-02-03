@@ -45,7 +45,7 @@ To ensure proper security measures the master password is stored in an encrypted
 
 
 #### Documentation :
- * Flask - <https://flask.palletspro jects.com/en/2.2.x/>
+ * Flask - <https://flask.palletsprojects.com/en/2.2.x/>
  * Python - <https://docs.python.org/3/>
  * Sqlite3 - <https://www.sqlite.org/docs.html>
  * Fernet - <https://cryptography.io/en/latest/fernet/>
